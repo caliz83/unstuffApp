@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     text: {
         color: Colour.primary,
         bottom: 40,
-        fontSize: 60,
+        fontSize: 60
 
     },
     price: {
