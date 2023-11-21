@@ -9,6 +9,7 @@ import {
   Platform
 } from "react-native";
 import Colour from "../config/Colour";
+import AppButton from "../components/AppButton";
 //import LivingRoom from '../assets/LivingRoom.jpg'
 
 //rsf, tab
@@ -26,12 +27,14 @@ function WelcomeScreen(props) {
       />
       <Text style={styles.text}>Unstuff Your Life</Text>
       {/* Button deprecated; suggested using Pressable instead so that's what I did */}
-      <Pressable style={styles.loginButton}>
+      {/* <Pressable style={styles.loginButton}>
         <Text style={styles.button}>Login</Text>
-      </Pressable>
-      <Pressable style={styles.registerButton}>
+      </Pressable> */}
+      <AppButton color="primary" title={'Login'} onPress={() => console.log("login!")} />
+      <AppButton color="secondary" title={'Register'} onPress={() => console.log("register!")} />
+      {/* <Pressable style={styles.registerButton}>
         <Text style={styles.button}>Register</Text>
-      </Pressable>
+      </Pressable> */}
     </ImageBackground>
   );
 }
