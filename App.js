@@ -5,6 +5,7 @@ import SecondScreen from "./app/screens/SecondScreen";
 import SaleScreen from "./app/screens/SaleScreen";
 import Card from "./app/components/Card";
 import ListingDetailScreen from "./app/screens/ListingDetailScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 
 
@@ -23,6 +24,7 @@ export default function App() {
     //   />
     // </View>
 
-    <ListingDetailScreen />
+    // <ListingDetailScreen />
+    <MessagesScreen />
   );
 }

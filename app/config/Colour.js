@@ -3,5 +3,6 @@ export default {
     secondary: 'hotpink',
     black: '#000',
     white: '#fff',
-    medium: 'gray'
+    medium: 'gray',
+    light: 'hotpink'
 }
