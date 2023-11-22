@@ -4,5 +4,4 @@ export default {
     black: '#000',
     white: '#fff',
     medium: 'gray',
-    light: 'hotpink'
 }
