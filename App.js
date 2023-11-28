@@ -6,8 +6,12 @@ import SaleScreen from "./app/screens/SaleScreen";
 import Card from "./app/components/Card";
 import ListingDetailScreen from "./app/screens/ListingDetailScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
-
-
+import "react-native-gesture-handler"; //npx expo install react-native-gesture-handler
+import { GestureHandlerRootView } from "react-native-gesture-handler"; //npm install --save react-native-gesture-handler
+import Screen from "./app/components/Screen";
+import Icon from "./app/components/Icon";
+import ListItem from "./app/components/ListItem";
+import AccountsScreen from "./app/screens/AccountsScreen";
 
 
 export default function App() {
@@ -25,6 +29,13 @@ export default function App() {
     // </View>
 
     // <ListingDetailScreen />
-    <MessagesScreen />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      {/* <MessagesScreen /> */}
+      {/* <Screen> */}
+        {/* <Icon name="email" size={50} backgroundColor="red" iconColor="white" /> */}
+        {/* <ListItem title='My title 1' subTitle='My subtitle 1' imageComponent={<Icon name='email' />} />
+      </Screen> */}
+      <AccountsScreen />
+    </GestureHandlerRootView>
   );
 }
