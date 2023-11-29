@@ -12,6 +12,8 @@ import Screen from "./app/components/Screen";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
 import AccountsScreen from "./app/screens/AccountsScreen";
+import ListingsScreen from "./app/screens/ListingsScreen";
+
 
 
 export default function App() {
@@ -35,7 +37,8 @@ export default function App() {
         {/* <Icon name="email" size={50} backgroundColor="red" iconColor="white" /> */}
         {/* <ListItem title='My title 1' subTitle='My subtitle 1' imageComponent={<Icon name='email' />} />
       </Screen> */}
-      <AccountsScreen />
+      {/* <AccountsScreen /> */}
+      <ListingsScreen />
     </GestureHandlerRootView>
   );
 }
