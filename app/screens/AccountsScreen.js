@@ -1,10 +1,11 @@
 import React from "react";
 import Screen from "../components/Screen";
 import ListItem from "../components/ListItem";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Modal } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
 import Colour from "../config/Colour";
 import Icon from "../components/Icon";
+import ListItemSeparator from "../components/ListItemSeparator";
 
 //dummy data
 const menuItems = [
@@ -32,6 +33,8 @@ const AccountsScreen = () => {
         <FlatList
           data={menuItems}
           keyExtractor={(menuItems) => menuItems.title}
+          ItemSeparatorComponent={ListItemSeparator}
+        //   not using the alligators to add ListItemComponent unless we need to pass in props
           renderItem={({ item }) => (
             <ListItem
               title={item.title}
@@ -45,6 +48,7 @@ const AccountsScreen = () => {
           )}
         />
       </View>
+      <ListItem title='Log Out' imageComponent={<Icon name='logout' backgroundColor="orange" />} />
     </Screen>
   );
 };

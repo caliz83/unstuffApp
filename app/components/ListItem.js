@@ -25,8 +25,9 @@ const ListItem = ({ title, subTitle, image, iPress, renderRightActions, imageCom
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        padding: 20
-    }    ,
+        padding: 20,
+        backgroundColor: Colour.white
+    },
     image: {
         width: 70,
         height: 70,
