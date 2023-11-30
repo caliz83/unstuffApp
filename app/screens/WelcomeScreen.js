@@ -23,7 +23,7 @@ function WelcomeScreen(props) {
     >
       <Image
         style={styles.logo}
-        source={require("../assets/UnstuffLogo.png")}
+        //source={require("../assets/UnstuffLogo.png")}
       />
       <Text style={styles.text}>Unstuff Your Life</Text>
       {/* Button deprecated; suggested using Pressable instead so that's what I did */}
