@@ -19,9 +19,29 @@ import AccountsScreen from "./app/screens/AccountsScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput";
 import AppSwitch from "./app/components/AppSwitch";
+import AppPicker from "./app/components/AppPicker";
+import AppPicker2 from "./app/components/AppPicker2";
+import LoginScreen from "./app/screens/LoginScreen";
+
+
+
+//dummy data
+// const categories = [
+//   {
+//     label: 'Furniture', value: 1
+//   },
+//   {
+//     label: 'Clothing', value: 2
+//   },
+//   {
+//     label: 'Camera', value: 3
+//   }
+// ]
 
 export default function App() {
-  const [firstName, setFirstName] = useState("This is our original text.");
+  // const [firstName, setFirstName] = useState("This is our original text.");
+
+  // const [category, setCategory] = useState(categories[0]); // passing in categories(0) just defaults to first option until something else is picked
   return (
     // <WelcomeScreen />
     // <SecondScreen />
@@ -44,7 +64,7 @@ export default function App() {
       </Screen> */}
       {/* <AccountsScreen /> */}
       {/* <ListingsScreen /> */}
-      <Screen>
+      {/* <Screen> */}
         {/* <Text>{firstName}</Text>
         <TextInput
         secureTextEntry={true}
@@ -57,8 +77,12 @@ export default function App() {
           onChangeText={(text) => setFirstName(text)}
         /> */}
         {/* <AppTextInput placeholder='Username' icon='email' /> */}
-        <AppSwitch />
-      </Screen>
+        {/* <AppSwitch /> */}
+        {/* <AppPicker /> */}
+        {/* <AppPicker2 items={categories} icon='apps' placeholder='Category' selectedItem={category} onSelectItem={item => setCategory(item)} />
+        <AppTextInput icon='email' placeholder='Email' />
+      </Screen> */}
+      <LoginScreen />
     </GestureHandlerRootView>
   );
 }
